@@ -20,6 +20,7 @@
           buildInputs = [
             openssl
             pkg-config
+            typst
             (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {
               extensions = [
                 "rust-src"
