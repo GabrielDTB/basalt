@@ -2,6 +2,7 @@
 
 mod app;
 mod compile;
+mod config;
 mod init;
 mod magic;
 
