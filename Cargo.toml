@@ -1,6 +1,6 @@
 [package]
 name = "basalt"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2021"
 description = "Basalt is a set of utilities for knowledge management in the terminal."
 license-file = "LICENSE"
