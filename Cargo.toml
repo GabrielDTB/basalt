@@ -2,6 +2,12 @@
 name = "basalt"
 version = "0.0.0"
 edition = "2021"
+description = "Basalt is a set of utilities for knowledge management in the terminal."
+license-file = "LICENSE"
+repository = "https://github.com/GabrielDTB/basalt"
+readme = "README.md"
+keywords = [ "cli", "tool", "command-line", "command" ]
+categories = [ "Command line utilities", "Text editors", "Text processing" ]
 
 [dependencies]
 anyhow = "1.0.89"
