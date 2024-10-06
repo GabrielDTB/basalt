@@ -8,4 +8,5 @@ anyhow = "1.0.89"
 clap = { version = "4.5.18", features = ["derive", "wrap_help"] }
 config = { version = "0.14.0", features = ["toml"] }
 toml = "0.8.19"
+const_format = "0.2.33"
 serde = { version = "1.0.210", features = ["derive"] }
