@@ -11,4 +11,9 @@ pub struct App {
 
 #[derive(Subcommand, Debug)]
 pub enum Command {
+    /// Initialize a vault in the current directory.
+    ///
+    /// Sets up the necessary structure to track
+    /// config, build documents, store state, etc.
+    Init,
 }

@@ -1,4 +1,8 @@
+#![feature(let_chains)]
+
 mod app;
+mod init;
+mod magic;
 
 use crate::app::{App, Command::*};
 use anyhow::Result;
@@ -9,6 +13,7 @@ fn main() -> Result<()> {
     let command = args.command;
 
     match command {
+        Init => init::command(),
         _ => unimplemented!(),
     }
 }
