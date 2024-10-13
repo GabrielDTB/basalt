@@ -1,18 +1,17 @@
-use crate::magic::BASE_PATH;
-use anyhow::Result;
-use config::{Config, File};
-use const_format::formatcp;
+use crate::magic::CONFIG_PATH;
+use config::Config;
+use config::File;
 
-pub fn get_config() -> Result<()> {
-    let settings = Config::builder()
-        .add_source(File::with_name(formatcp!("{BASE_PATH}basalt.toml")))
+pub fn get_config() -> Config {
+    let base = Config::builder();
+    match base
+        .clone()
+        .add_source(File::with_name(CONFIG_PATH))
         .build()
-        .unwrap();
-
-    println!(
-        "{:?}",
-        settings // .try_deserialize::<HashMap<String, String>>()
-                 // .unwrap()
-    );
-    Ok(())
+    {
+        Ok(config) => config,
+        _ => base
+            .build()
+            .expect("Base config failed to build. The devs messed up."),
+    }
 }
