@@ -9,7 +9,7 @@ Basalt is a set of utilities for knowledge management in the terminal.
 - [ ] Forward links
   - [x] Traversable
   - [ ] Canonical target for linking to other notes
-  - [ ] Autocomplete 
+  - [ ] Autocomplete
 - [ ] Back links
   - [x] Get list for link
   - [x] Traversable
