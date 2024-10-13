@@ -8,3 +8,4 @@ pub const NEEDS_TO_EXIST: [&str; 3] = [BASE_PATH, OUTPUT_PATH, WORKING_PATH];
 
 pub const COMPILE_SCRATCH_PATH: &str = formatcp!("{WORKING_PATH}{SEP}vault.typ");
 pub const DEFAULT_OUTPUT_PATH: &str = formatcp!("{OUTPUT_PATH}{SEP}vault.pdf");
+pub const CONFIG_PATH: &str = formatcp!("{BASE_PATH}{SEP}basalt.toml");
