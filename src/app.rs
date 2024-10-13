@@ -18,6 +18,9 @@ pub enum Command {
     /// config, build documents, store state, etc.
     Init,
 
+    /// Create a new note.
+    New(NewArgs),
+
     /// Compile a vault.
     Compile(CompileArgs),
 
@@ -27,6 +30,16 @@ pub enum Command {
     /// Perform configuration related actions.
     #[clap(subcommand)]
     Config(ConfigCommands),
+}
+
+#[derive(Args, Debug)]
+pub struct NewArgs {
+    /// Name for the new note.
+    #[clap(short, long)]
+    pub name: Option<String>,
+    /// Program to automatically open note with.
+    #[clap(short, long)]
+    pub open: Option<String>,
 }
 
 #[derive(Args, Debug)]
