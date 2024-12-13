@@ -1,6 +1,8 @@
 [submodule "cli"]
 	path = cli
 	url = https://github.com/GabrielDTB/basalt-cli
+	branch = main
 [submodule "lib"]
 	path = lib
 	url = https://github.com/GabrielDTB/basalt-lib
+	branch = main
