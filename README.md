@@ -8,7 +8,7 @@ Basalt is a set of utilities for knowledge management.
   - [ ] From templates
 - [ ] Forward links
   - [x] Traversable
-  - [ ] Canonical target for linking to other notes
+  - [x] Canonical target for linking to other notes
   - [ ] Autocomplete
 - [ ] Back links
   - [x] Get list for link
@@ -34,7 +34,7 @@ Basalt is a set of utilities for knowledge management.
   - [ ] Links in document
   - [ ] Character count
   - [ ] Word count
-  - [ ] User defined metadata
+  - [x] User defined metadata
 - [ ] Graph view
 
 # Design
@@ -65,14 +65,12 @@ for them to exist.
 ## Tier 1
 
 - [ ] Forward links
-  - [ ] Canonical target for linking to other notes
   - [ ] Autocomplete
 - [ ] Query API
   - [ ] Links to document
   - [ ] Links in document
   - [ ] Character count
   - [ ] Word count
-  - [ ] User defined metadata
 - [ ] Graph view
 
 ## Tier 2
@@ -95,5 +93,5 @@ for them to exist.
   - [ ] From templates
 - [ ] Search
   - [ ] Canonical method
-- [ ] Back links
+- [ ] Backlinks
   - [ ] Template to display note backlinks
